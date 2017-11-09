@@ -44,7 +44,7 @@ public class DBConnection {
 	private static Connection conn;
 	private  String host = "dragonbasedb.cxwfuof2khve.us-west-2.rds.amazonaws.com";
 	private  int port = 3306;
-	private static  String database = "DragonBaseDB";
+	private static  String database = "DragonBaseRDS";
 	private  String url = "jdbc:mysql://" + host + ":" + port + "/" + database;
 	private  String user = "vegetaDB";
 	private  String pwd = "gokuadmin";

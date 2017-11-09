@@ -21,12 +21,12 @@ public class DataBase {
 
 	public void useTable() {
 		try {
-			System.out.println("query va etre executer");
+			System.out.println("query1 va etre executer");
 			String sql = "use "+DBConnection.getDatabase()+";";
 			System.out.println(sql);
 			PreparedStatement statement = DBConnection.getInstance()
 					.prepareStatement(sql);
-			statement.executeQuery();
+			statement.executeUpdate();
 			System.out.println("query executer");
 
 		} catch (SQLException ex) {
@@ -48,7 +48,7 @@ public class DataBase {
 			System.out.println(sql);
 			PreparedStatement statement = DBConnection.getInstance()
 					.prepareStatement(sql);
-			statement.executeQuery();
+			statement.executeUpdate();
 			System.out.println("query2 executer");
 
 		} catch (SQLException ex) {
